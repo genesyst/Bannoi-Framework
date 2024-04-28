@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BNSDATA_EHRModelStoreContainer" CdmEntityContainer="BNSDATA_EHREntities">
+    <EntitySetMapping Name="EMPLOYEE">
+      <EntityTypeMapping TypeName="BNSDATA_EHRModel.EMPLOYEE">
+        <MappingFragment StoreEntitySet="EMPLOYEE">
+          <ScalarProperty Name="EMPSEQ" ColumnName="EMPSEQ" />
+          <ScalarProperty Name="EMPCODE" ColumnName="EMPCODE" />
+          <ScalarProperty Name="EMPTNAME" ColumnName="EMPTNAME" />
+          <ScalarProperty Name="EMPFNAME" ColumnName="EMPFNAME" />
+          <ScalarProperty Name="EMPLNAME" ColumnName="EMPLNAME" />
+          <ScalarProperty Name="EMPSEX" ColumnName="EMPSEX" />
+          <ScalarProperty Name="DEPTCOD" ColumnName="DEPTCOD" />
+          <ScalarProperty Name="EMPPOSI" ColumnName="EMPPOSI" />
+          <ScalarProperty Name="EMPLEV" ColumnName="EMPLEV" />
+          <ScalarProperty Name="EMPTYP" ColumnName="EMPTYP" />
+          <ScalarProperty Name="EMPID" ColumnName="EMPID" />
+          <ScalarProperty Name="EMPSTRT" ColumnName="EMPSTRT" />
+          <ScalarProperty Name="EMPBRTH" ColumnName="EMPBRTH" />
+          <ScalarProperty Name="EMPAGE" ColumnName="EMPAGE" />
+          <ScalarProperty Name="EMPSTT" ColumnName="EMPSTT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

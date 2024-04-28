@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BNSDATA_EHRModelStoreContainer" CdmEntityContainer="BNSDATA_EHREntities">
+    <EntitySetMapping Name="SIN_USER">
+      <EntityTypeMapping TypeName="BNSDATA_EHRModel.SIN_USER">
+        <MappingFragment StoreEntitySet="SIN_USER">
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="EMPCODE" ColumnName="EMPCODE" />
+          <ScalarProperty Name="USERPW" ColumnName="USERPW" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="REC_ID" ColumnName="REC_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SIN_USERGANT">
+      <EntityTypeMapping TypeName="BNSDATA_EHRModel.SIN_USERGANT">
+        <MappingFragment StoreEntitySet="SIN_USERGANT">
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="ISADMIN" ColumnName="ISADMIN" />
+          <ScalarProperty Name="SYSTEMVERSION" ColumnName="SYSTEMVERSION" />
+          <ScalarProperty Name="SYSTEMCODE" ColumnName="SYSTEMCODE" />
+          <ScalarProperty Name="LEVELCODE" ColumnName="LEVELCODE" />
+          <ScalarProperty Name="SIGNID" ColumnName="SIGNID" />
+          <ScalarProperty Name="GROUPCODE" ColumnName="GROUPCODE" />
+          <ScalarProperty Name="REC_ID" ColumnName="REC_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SIN_USERGROUP">
+      <EntityTypeMapping TypeName="BNSDATA_EHRModel.SIN_USERGROUP">
+        <MappingFragment StoreEntitySet="SIN_USERGROUP">
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="GROUPNAME" ColumnName="GROUPNAME" />
+          <ScalarProperty Name="GROUPCODE" ColumnName="GROUPCODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLOYEE">
+      <EntityTypeMapping TypeName="BNSDATA_EHRModel.EMPLOYEE">
+        <MappingFragment StoreEntitySet="EMPLOYEE">
+          <ScalarProperty Name="EMPSTT" ColumnName="EMPSTT" />
+          <ScalarProperty Name="EMPAGE" ColumnName="EMPAGE" />
+          <ScalarProperty Name="EMPBRTH" ColumnName="EMPBRTH" />
+          <ScalarProperty Name="EMPSTRT" ColumnName="EMPSTRT" />
+          <ScalarProperty Name="EMPID" ColumnName="EMPID" />
+          <ScalarProperty Name="EMPTYP" ColumnName="EMPTYP" />
+          <ScalarProperty Name="EMPLEV" ColumnName="EMPLEV" />
+          <ScalarProperty Name="EMPPOSI" ColumnName="EMPPOSI" />
+          <ScalarProperty Name="DEPTCOD" ColumnName="DEPTCOD" />
+          <ScalarProperty Name="EMPSEX" ColumnName="EMPSEX" />
+          <ScalarProperty Name="EMPLNAME" ColumnName="EMPLNAME" />
+          <ScalarProperty Name="EMPFNAME" ColumnName="EMPFNAME" />
+          <ScalarProperty Name="EMPTNAME" ColumnName="EMPTNAME" />
+          <ScalarProperty Name="EMPCODE" ColumnName="EMPCODE" />
+          <ScalarProperty Name="EMPSEQ" ColumnName="EMPSEQ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLOYEE_POSI">
+      <EntityTypeMapping TypeName="BNSDATA_EHRModel.EMPLOYEE_POSI">
+        <MappingFragment StoreEntitySet="EMPLOYEE_POSI">
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="POSNAME" ColumnName="POSNAME" />
+          <ScalarProperty Name="POSCODE" ColumnName="POSCODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VIEW_EHRSIGNIN">
+      <EntityTypeMapping TypeName="BNSDATA_EHRModel.VIEW_EHRSIGNIN">
+        <MappingFragment StoreEntitySet="VIEW_EHRSIGNIN">
+          <ScalarProperty Name="GSTT" ColumnName="GSTT" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="ISADMIN" ColumnName="ISADMIN" />
+          <ScalarProperty Name="SYSTEMVERSION" ColumnName="SYSTEMVERSION" />
+          <ScalarProperty Name="SYSTEMCODE" ColumnName="SYSTEMCODE" />
+          <ScalarProperty Name="LEVELCODE" ColumnName="LEVELCODE" />
+          <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+          <ScalarProperty Name="EMPCODE" ColumnName="EMPCODE" />
+          <ScalarProperty Name="SIGNID" ColumnName="SIGNID" />
+          <ScalarProperty Name="USERPW" ColumnName="USERPW" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

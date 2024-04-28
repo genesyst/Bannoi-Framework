@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BNSDATA_EHRModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="BNSDATA_EHRModelStoreContainer">
+          <EntitySet Name="EMPLOYEE" EntityType="BNSDATA_EHRModel.Store.EMPLOYEE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EMPLOYEE_POSI" EntityType="BNSDATA_EHRModel.Store.EMPLOYEE_POSI" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SIN_USER" EntityType="BNSDATA_EHRModel.Store.SIN_USER" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SIN_USERGANT" EntityType="BNSDATA_EHRModel.Store.SIN_USERGANT" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SIN_USERGROUP" EntityType="BNSDATA_EHRModel.Store.SIN_USERGROUP" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="VIEW_EHRSIGNIN" EntityType="BNSDATA_EHRModel.Store.VIEW_EHRSIGNIN" store:Type="Views" store:Schema="dbo" store:Name="VIEW_EHRSIGNIN">
+            <DefiningQuery>SELECT 
+      [VIEW_EHRSIGNIN].[USERNAME] AS [USERNAME], 
+      [VIEW_EHRSIGNIN].[USERPW] AS [USERPW], 
+      [VIEW_EHRSIGNIN].[SIGNID] AS [SIGNID], 
+      [VIEW_EHRSIGNIN].[EMPCODE] AS [EMPCODE], 
+      [VIEW_EHRSIGNIN].[FULLNAME] AS [FULLNAME], 
+      [VIEW_EHRSIGNIN].[LEVELCODE] AS [LEVELCODE], 
+      [VIEW_EHRSIGNIN].[SYSTEMCODE] AS [SYSTEMCODE], 
+      [VIEW_EHRSIGNIN].[SYSTEMVERSION] AS [SYSTEMVERSION], 
+      [VIEW_EHRSIGNIN].[ISADMIN] AS [ISADMIN], 
+      [VIEW_EHRSIGNIN].[STT] AS [STT], 
+      [VIEW_EHRSIGNIN].[GSTT] AS [GSTT]
+      FROM [dbo].[VIEW_EHRSIGNIN] AS [VIEW_EHRSIGNIN]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <EntityType Name="EMPLOYEE">
+          <Key>
+            <PropertyRef Name="EMPCODE" />
+          </Key>
+          <Property Name="EMPSEQ" Type="int" />
+          <Property Name="EMPCODE" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="EMPTNAME" Type="varchar" MaxLength="50" />
+          <Property Name="EMPFNAME" Type="varchar" MaxLength="50" />
+          <Property Name="EMPLNAME" Type="varchar" MaxLength="50" />
+          <Property Name="EMPSEX" Type="char" MaxLength="1" />
+          <Property Name="DEPTCOD" Type="char" MaxLength="4" />
+          <Property Name="EMPPOSI" Type="varchar" MaxLength="20" />
+          <Property Name="EMPLEV" Type="char" MaxLength="1" />
+          <Property Name="EMPTYP" Type="char" MaxLength="1" />
+          <Property Name="EMPID" Type="char" MaxLength="13" />
+          <Property Name="EMPSTRT" Type="datetime" />
+          <Property Name="EMPBRTH" Type="datetime" />
+          <Property Name="EMPAGE" Type="int" />
+          <Property Name="EMPSTT" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="EMPLOYEE_POSI">
+          <Key>
+            <PropertyRef Name="POSCODE" />
+          </Key>
+          <Property Name="POSCODE" Type="char" Nullable="false" MaxLength="11" />
+          <Property Name="POSNAME" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="UPDATE_DATE" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SIN_USER">
+          <Key>
+            <PropertyRef Name="REC_ID" />
+          </Key>
+          <Property Name="REC_ID" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="USERNAME" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="USERPW" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="EMPCODE" Type="varchar" MaxLength="20" />
+          <Property Name="STT" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="UPDATE_BY" Type="varchar" MaxLength="20" />
+          <Property Name="UPDATE_DATE" Type="datetime" />
+          <Property Name="CREATE_BY" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="CREATE_DATE" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SIN_USERGANT">
+          <Key>
+            <PropertyRef Name="REC_ID" />
+          </Key>
+          <Property Name="REC_ID" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GROUPCODE" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="SIGNID" Type="numeric" Nullable="false" />
+          <Property Name="LEVELCODE" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="SYSTEMCODE" Type="char" MaxLength="3" />
+          <Property Name="SYSTEMVERSION" Type="varchar" MaxLength="50" />
+          <Property Name="ISADMIN" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="STT" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="UPDATE_BY" Type="varchar" MaxLength="20" />
+          <Property Name="UPDATE_DATE" Type="datetime" />
+          <Property Name="CREATE_BY" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="CREATE_DATE" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SIN_USERGROUP">
+          <Key>
+            <PropertyRef Name="GROUPCODE" />
+          </Key>
+          <Property Name="GROUPCODE" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="GROUPNAME" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="STT" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="UPDATE_BY" Type="varchar" MaxLength="20" />
+          <Property Name="UPDATE_DATE" Type="datetime" />
+          <Property Name="CREATE_BY" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="CREATE_DATE" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BNSDATA_EHR.dbo.VIEW_EHRSIGNIN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="VIEW_EHRSIGNIN">
+          <Key>
+            <PropertyRef Name="USERNAME" />
+            <PropertyRef Name="USERPW" />
+            <PropertyRef Name="SIGNID" />
+            <PropertyRef Name="LEVELCODE" />
+            <PropertyRef Name="ISADMIN" />
+            <PropertyRef Name="STT" />
+            <PropertyRef Name="GSTT" />
+          </Key>
+          <Property Name="USERNAME" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="USERPW" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="SIGNID" Type="numeric" Nullable="false" />
+          <Property Name="EMPCODE" Type="varchar" MaxLength="20" />
+          <Property Name="FULLNAME" Type="varchar" MaxLength="152" />
+          <Property Name="LEVELCODE" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="SYSTEMCODE" Type="char" MaxLength="3" />
+          <Property Name="SYSTEMVERSION" Type="varchar" MaxLength="50" />
+          <Property Name="ISADMIN" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="STT" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="GSTT" Type="char" Nullable="false" MaxLength="1" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BNSDATA_EHRModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BNSDATA_EHREntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="SIN_USER" EntityType="BNSDATA_EHRModel.SIN_USER" />
+          <EntitySet Name="SIN_USERGANT" EntityType="BNSDATA_EHRModel.SIN_USERGANT" />
+          <EntitySet Name="SIN_USERGROUP" EntityType="BNSDATA_EHRModel.SIN_USERGROUP" />
+          <EntitySet Name="EMPLOYEE" EntityType="BNSDATA_EHRModel.EMPLOYEE" />
+          <EntitySet Name="EMPLOYEE_POSI" EntityType="BNSDATA_EHRModel.EMPLOYEE_POSI" />
+          <EntitySet Name="VIEW_EHRSIGNIN" EntityType="BNSDATA_EHRModel.VIEW_EHRSIGNIN" />
+        </EntityContainer>
+        <EntityType Name="SIN_USER">
+          <Key>
+            <PropertyRef Name="REC_ID" />
+          </Key>
+          <Property Type="Decimal" Name="REC_ID" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="USERNAME" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="USERPW" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMPCODE" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="STT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="UPDATE_BY" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="UPDATE_DATE" Precision="3" />
+          <Property Type="String" Name="CREATE_BY" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CREATE_DATE" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="SIN_USERGANT">
+          <Key>
+            <PropertyRef Name="REC_ID" />
+          </Key>
+          <Property Type="Decimal" Name="REC_ID" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="GROUPCODE" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="SIGNID" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="String" Name="LEVELCODE" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="SYSTEMCODE" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="SYSTEMVERSION" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ISADMIN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="STT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="UPDATE_BY" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="UPDATE_DATE" Precision="3" />
+          <Property Type="String" Name="CREATE_BY" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CREATE_DATE" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="SIN_USERGROUP">
+          <Key>
+            <PropertyRef Name="GROUPCODE" />
+          </Key>
+          <Property Type="String" Name="GROUPCODE" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="GROUPNAME" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="STT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="UPDATE_BY" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="UPDATE_DATE" Precision="3" />
+          <Property Type="String" Name="CREATE_BY" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CREATE_DATE" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="EMPLOYEE">
+          <Key>
+            <PropertyRef Name="EMPCODE" />
+          </Key>
+          <Property Type="Int32" Name="EMPSEQ" />
+          <Property Type="String" Name="EMPCODE" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMPTNAME" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMPFNAME" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMPLNAME" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMPSEX" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="DEPTCOD" MaxLength="4" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="EMPPOSI" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMPLEV" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="EMPTYP" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="EMPID" MaxLength="13" FixedLength="true" Unicode="false" />
+          <Property Type="DateTime" Name="EMPSTRT" Precision="3" />
+          <Property Type="DateTime" Name="EMPBRTH" Precision="3" />
+          <Property Type="Int32" Name="EMPAGE" />
+          <Property Type="String" Name="EMPSTT" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="EMPLOYEE_POSI">
+          <Key>
+            <PropertyRef Name="POSCODE" />
+          </Key>
+          <Property Type="String" Name="POSCODE" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="POSNAME" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="UPDATE_DATE" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="VIEW_EHRSIGNIN">
+          <Key>
+            <PropertyRef Name="USERNAME" />
+            <PropertyRef Name="USERPW" />
+            <PropertyRef Name="SIGNID" />
+            <PropertyRef Name="LEVELCODE" />
+            <PropertyRef Name="ISADMIN" />
+            <PropertyRef Name="STT" />
+            <PropertyRef Name="GSTT" />
+          </Key>
+          <Property Type="String" Name="USERNAME" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="USERPW" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="SIGNID" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="String" Name="EMPCODE" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FULLNAME" MaxLength="152" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LEVELCODE" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="SYSTEMCODE" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="SYSTEMVERSION" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ISADMIN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="STT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="GSTT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BNSDATA_EHRModelStoreContainer" CdmEntityContainer="BNSDATA_EHREntities">
+          <EntitySetMapping Name="SIN_USER">
+            <EntityTypeMapping TypeName="BNSDATA_EHRModel.SIN_USER">
+              <MappingFragment StoreEntitySet="SIN_USER">
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="STT" ColumnName="STT" />
+                <ScalarProperty Name="EMPCODE" ColumnName="EMPCODE" />
+                <ScalarProperty Name="USERPW" ColumnName="USERPW" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="REC_ID" ColumnName="REC_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SIN_USERGANT">
+            <EntityTypeMapping TypeName="BNSDATA_EHRModel.SIN_USERGANT">
+              <MappingFragment StoreEntitySet="SIN_USERGANT">
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="STT" ColumnName="STT" />
+                <ScalarProperty Name="ISADMIN" ColumnName="ISADMIN" />
+                <ScalarProperty Name="SYSTEMVERSION" ColumnName="SYSTEMVERSION" />
+                <ScalarProperty Name="SYSTEMCODE" ColumnName="SYSTEMCODE" />
+                <ScalarProperty Name="LEVELCODE" ColumnName="LEVELCODE" />
+                <ScalarProperty Name="SIGNID" ColumnName="SIGNID" />
+                <ScalarProperty Name="GROUPCODE" ColumnName="GROUPCODE" />
+                <ScalarProperty Name="REC_ID" ColumnName="REC_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SIN_USERGROUP">
+            <EntityTypeMapping TypeName="BNSDATA_EHRModel.SIN_USERGROUP">
+              <MappingFragment StoreEntitySet="SIN_USERGROUP">
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CREATE_BY" ColumnName="CREATE_BY" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="STT" ColumnName="STT" />
+                <ScalarProperty Name="GROUPNAME" ColumnName="GROUPNAME" />
+                <ScalarProperty Name="GROUPCODE" ColumnName="GROUPCODE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EMPLOYEE">
+            <EntityTypeMapping TypeName="BNSDATA_EHRModel.EMPLOYEE">
+              <MappingFragment StoreEntitySet="EMPLOYEE">
+                <ScalarProperty Name="EMPSTT" ColumnName="EMPSTT" />
+                <ScalarProperty Name="EMPAGE" ColumnName="EMPAGE" />
+                <ScalarProperty Name="EMPBRTH" ColumnName="EMPBRTH" />
+                <ScalarProperty Name="EMPSTRT" ColumnName="EMPSTRT" />
+                <ScalarProperty Name="EMPID" ColumnName="EMPID" />
+                <ScalarProperty Name="EMPTYP" ColumnName="EMPTYP" />
+                <ScalarProperty Name="EMPLEV" ColumnName="EMPLEV" />
+                <ScalarProperty Name="EMPPOSI" ColumnName="EMPPOSI" />
+                <ScalarProperty Name="DEPTCOD" ColumnName="DEPTCOD" />
+                <ScalarProperty Name="EMPSEX" ColumnName="EMPSEX" />
+                <ScalarProperty Name="EMPLNAME" ColumnName="EMPLNAME" />
+                <ScalarProperty Name="EMPFNAME" ColumnName="EMPFNAME" />
+                <ScalarProperty Name="EMPTNAME" ColumnName="EMPTNAME" />
+                <ScalarProperty Name="EMPCODE" ColumnName="EMPCODE" />
+                <ScalarProperty Name="EMPSEQ" ColumnName="EMPSEQ" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EMPLOYEE_POSI">
+            <EntityTypeMapping TypeName="BNSDATA_EHRModel.EMPLOYEE_POSI">
+              <MappingFragment StoreEntitySet="EMPLOYEE_POSI">
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="POSNAME" ColumnName="POSNAME" />
+                <ScalarProperty Name="POSCODE" ColumnName="POSCODE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VIEW_EHRSIGNIN">
+            <EntityTypeMapping TypeName="BNSDATA_EHRModel.VIEW_EHRSIGNIN">
+              <MappingFragment StoreEntitySet="VIEW_EHRSIGNIN">
+                <ScalarProperty Name="GSTT" ColumnName="GSTT" />
+                <ScalarProperty Name="STT" ColumnName="STT" />
+                <ScalarProperty Name="ISADMIN" ColumnName="ISADMIN" />
+                <ScalarProperty Name="SYSTEMVERSION" ColumnName="SYSTEMVERSION" />
+                <ScalarProperty Name="SYSTEMCODE" ColumnName="SYSTEMCODE" />
+                <ScalarProperty Name="LEVELCODE" ColumnName="LEVELCODE" />
+                <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+                <ScalarProperty Name="EMPCODE" ColumnName="EMPCODE" />
+                <ScalarProperty Name="SIGNID" ColumnName="SIGNID" />
+                <ScalarProperty Name="USERPW" ColumnName="USERPW" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

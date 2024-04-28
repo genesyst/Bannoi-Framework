@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93A6875B-9FA5-44C6-8A69-BC300AC90790}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bannoiFramework</RootNamespace>
+    <AssemblyName>bannoiFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CoreAudioApi">
+      <HintPath>H:\SAS\bannoiFramework\bannoiFramework\bin\Debug\CoreAudioApi.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\ehr_management\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI">
+      <HintPath>..\..\SASEnterpriseStock\packages\DataConnectionDialog.1.2\lib\Microsoft.Data.ConnectionUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI.Dialog">
+      <HintPath>..\..\SASEnterpriseStock\packages\DataConnectionDialog.1.2\lib\Microsoft.Data.ConnectionUI.Dialog.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>..\..\vrun\vrun\bin\Debug\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>..\..\vrun\vrun\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="MixerNativeLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Libraly\Source sample\C# Work with Microphone\WindowsMicrophoneMuteLibraryBinaries\MixerNativeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio">
+      <HintPath>..\..\vrun\packages\NAudio.1.7.3\lib\net35\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Lame">
+      <HintPath>..\..\vrun\packages\NAudio.Lame.1.0.3\lib\net20\NAudio.Lame.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="serviceLib">
+      <HintPath>..\..\ServiceLib.net\serviceLib\bin\Debug\serviceLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsMicrophoneMuteLibrary">
+      <HintPath>H:\SAS\bannoiFramework\bannoiFramework\bin\Debug\WindowsMicrophoneMuteLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controlls\bnsComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\bnsComboBox.Designer.cs">
+      <DependentUpon>bnsComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\bnsFormTransparent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\bnsFormTransparent.Designer.cs">
+      <DependentUpon>bnsFormTransparent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\bnsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\bnsPanel.Designer.cs">
+      <DependentUpon>bnsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\bnsShardButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\bnsShardButton.Designer.cs">
+      <DependentUpon>bnsShardButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBox.Designer.cs">
+      <DependentUpon>bnsTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBoxDecimal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBoxDecimal.Designer.cs">
+      <DependentUpon>bnsTextBoxDecimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBoxEmail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBoxEmail.Designer.cs">
+      <DependentUpon>bnsTextBoxEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBoxKeypad.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBoxKeypad.Designer.cs">
+      <DependentUpon>bnsTextBoxKeypad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBoxLookUp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBoxLookUp.Designer.cs">
+      <DependentUpon>bnsTextBoxLookUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBoxNumber.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBoxNumber.Designer.cs">
+      <DependentUpon>bnsTextBoxNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBoxTelephoneNumber.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\bnsTextBoxTelephoneNumber.Designer.cs">
+      <DependentUpon>bnsTextBoxTelephoneNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\bnsTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\bnsTimer.Designer.cs">
+      <DependentUpon>bnsTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\DataGridList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controlls\DataGridList.Designer.cs">
+      <DependentUpon>DataGridList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTRL\uc_cash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CTRL\uc_cash.Designer.cs">
+      <DependentUpon>uc_cash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTRL\uc_Query.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CTRL\uc_Query.Designer.cs">
+      <DependentUpon>uc_Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTRL\uc_QueryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CTRL\uc_QueryView.Designer.cs">
+      <DependentUpon>uc_QueryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTRL\uc_sideTools.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CTRL\uc_sideTools.Designer.cs">
+      <DependentUpon>uc_sideTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTRL\uc_soundPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CTRL\uc_soundPlayer.Designer.cs">
+      <DependentUpon>uc_soundPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTRL\uc_topFilterTools.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CTRL\uc_topFilterTools.Designer.cs">
+      <DependentUpon>uc_topFilterTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTRL\uc_topTools.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CTRL\uc_topTools.Designer.cs">
+      <DependentUpon>uc_topTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTRL\uc_touchNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CTRL\uc_touchNumber.Designer.cs">
+      <DependentUpon>uc_touchNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\BNSDATA_EHR.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BNSDATA_EHR.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\BNSDATA_EHR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BNSDATA_EHR.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\BNSDATA_EHR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BNSDATA_EHR.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\EMPLOYEE.cs">
+      <DependentUpon>BNSDATA_EHR.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\EMPLOYEE_POSI.cs">
+      <DependentUpon>BNSDATA_EHR.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\SIN_USER.cs">
+      <DependentUpon>BNSDATA_EHR.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\SIN_USERGANT.cs">
+      <DependentUpon>BNSDATA_EHR.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\SIN_USERGROUP.cs">
+      <DependentUpon>BNSDATA_EHR.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\VIEW_EHRSIGNIN.cs">
+      <DependentUpon>BNSDATA_EHR.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgBrows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\dlgBrows.Designer.cs">
+      <DependentUpon>dlgBrows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\dlgCash.Designer.cs">
+      <DependentUpon>dlgCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgDataEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\dlgDataEntry.Designer.cs">
+      <DependentUpon>dlgDataEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\dlgInput.Designer.cs">
+      <DependentUpon>dlgInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgMasterFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\dlgMasterFile.Designer.cs">
+      <DependentUpon>dlgMasterFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgMultiCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\dlgMultiCode.Designer.cs">
+      <DependentUpon>dlgMultiCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\dlgQuery.Designer.cs">
+      <DependentUpon>dlgQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgSoundPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\dlgSoundPlayer.Designer.cs">
+      <DependentUpon>dlgSoundPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgTouchNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\dlgTouchNumber.Designer.cs">
+      <DependentUpon>dlgTouchNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\dlgUserFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\dlgUserFunction.Designer.cs">
+      <DependentUpon>dlgUserFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SigninDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SigninDlg.Designer.cs">
+      <DependentUpon>SigninDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEntry.Designer.cs">
+      <DependentUpon>frmEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SiginModel.cs" />
+    <Compile Include="Models\UserGantModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Services\bnsServiceControl.cs" />
+    <Compile Include="Services\bnsServiceDb.cs" />
+    <Compile Include="Services\bnsServiceDMP.cs" />
+    <Compile Include="Services\bnsServiceDrawing.cs" />
+    <Compile Include="Services\bnsServiceIO.cs" />
+    <Compile Include="Services\bnsServiceMedia.cs" />
+    <Compile Include="Services\bnsServiceRegistry.cs" />
+    <Compile Include="Services\bnsServiceUtils.cs" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controlls\bnsPanel.resx">
+      <DependentUpon>bnsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controlls\bnsTextBox.resx">
+      <DependentUpon>bnsTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controlls\bnsTextBoxEmail.resx">
+      <DependentUpon>bnsTextBoxEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controlls\bnsTextBoxKeypad.resx">
+      <DependentUpon>bnsTextBoxKeypad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controlls\bnsTextBoxLookUp.resx">
+      <DependentUpon>bnsTextBoxLookUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controlls\bnsTextBoxTelephoneNumber.resx">
+      <DependentUpon>bnsTextBoxTelephoneNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTRL\uc_cash.resx">
+      <DependentUpon>uc_cash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTRL\uc_Query.resx">
+      <DependentUpon>uc_Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTRL\uc_QueryView.resx">
+      <DependentUpon>uc_QueryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTRL\uc_sideTools.resx">
+      <DependentUpon>uc_sideTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTRL\uc_soundPlayer.resx">
+      <DependentUpon>uc_soundPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTRL\uc_topFilterTools.resx">
+      <DependentUpon>uc_topFilterTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTRL\uc_topTools.resx">
+      <DependentUpon>uc_topTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTRL\uc_touchNumber.resx">
+      <DependentUpon>uc_touchNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\dlgBrows.resx">
+      <DependentUpon>dlgBrows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\dlgCash.resx">
+      <DependentUpon>dlgCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\dlgDataEntry.resx">
+      <DependentUpon>dlgDataEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\dlgInput.resx">
+      <DependentUpon>dlgInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\dlgMasterFile.resx">
+      <DependentUpon>dlgMasterFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\dlgMultiCode.resx">
+      <DependentUpon>dlgMultiCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\dlgQuery.resx">
+      <DependentUpon>dlgQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\dlgSoundPlayer.resx">
+      <DependentUpon>dlgSoundPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\dlgTouchNumber.resx">
+      <DependentUpon>dlgTouchNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\dlgUserFunction.resx">
+      <DependentUpon>dlgUserFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SigninDlg.resx">
+      <DependentUpon>SigninDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEntry.resx">
+      <DependentUpon>frmEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Dataset\BNSDATA_EHR.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BNSDATA_EHR.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="Dataset\BNSDATA_EHR.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BNSDATA_EHR.edmx</DependentUpon>
+      <LastGenOutput>BNSDATA_EHR.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\BNSDATA_EHR.edmx.diagram">
+      <DependentUpon>BNSDATA_EHR.edmx</DependentUpon>
+    </None>
+    <None Include="Dataset\BNSDATA_EHR.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BNSDATA_EHR.edmx</DependentUpon>
+      <LastGenOutput>BNSDATA_EHR.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\exit_p5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_05.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_06.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_08.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dossier-zip_p6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_p6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icontexto-webdev-config-032x032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icontexto-webdev-config-128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icontexto-webdev-money-032x032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icontexto-webdev-user-032x032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_02.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_39.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_38.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libmp3lame.32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libmp3lame.64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\plainicon.com-49797-256px-a2f.png" />
+    <None Include="Resources\tables-512.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\647404-share-512.png" />
+    <None Include="Resources\Sql-runner-icon11.png" />
+    <None Include="Resources\Sql-runner-icon1.png" />
+    <None Include="Resources\sql-query-scripting-icon.png" />
+    <None Include="Resources\db_backup.png" />
+    <None Include="Resources\database.png" />
+    <None Include="Resources\edit_clear.png" />
+    <None Include="Resources\icon_25516.png" />
+    <None Include="Resources\Seanau-Email-Clear.ico" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\Cancel_Icon.svg.png" />
+    <None Include="Resources\clear_left.png" />
+    <None Include="Resources\left-28998_640.png" />
+    <None Include="Resources\arrow-30330_640.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

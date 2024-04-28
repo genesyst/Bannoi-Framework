@@ -1,0 +1,100 @@
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\libmp3lame.32.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\libmp3lame.64.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\bannoiFramework.dll.config
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\bannoiFramework.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\bannoiFramework.pdb
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\CoreAudioApi.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\EntityFramework.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\MixerNativeLibrary.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\NAudio.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\NAudio.Lame.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\serviceLib.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\WindowsMicrophoneMuteLibrary.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\MessagingToolkit.QRCode.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\office.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\CoreAudioApi.pdb
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\EntityFramework.xml
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\MixerNativeLibrary.pdb
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\NAudio.xml
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\serviceLib.pdb
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\WindowsMicrophoneMuteLibrary.pdb
+D:\DMP Project\bannoiFramework\bannoiFramework\bin\Debug\office.xml
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\Interop.WMPLib.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.csproj.ResolveComReference.cache
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Controlls.bnsPanel.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Controlls.bnsTextBox.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Controlls.bnsTextBoxEmail.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Controlls.bnsTextBoxLookUp.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Controlls.bnsTextBoxTelephoneNumber.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_cash.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_sideTools.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_soundPlayer.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_topFilterTools.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_topTools.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_touchNumber.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgBrows.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgCash.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgDataEntry.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgInput.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgMasterFile.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgMultiCode.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgSoundPlayer.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgTouchNumber.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgUserFunction.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.SigninDlg.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Forms.frmEntry.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Properties.Resources.resources
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.csproj.GenerateResource.Cache
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.dll.licenses
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.dll
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.pdb
+D:\DMP Project\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.csprojResolveAssemblyReference.cache
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\Interop.WMPLib.dll
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.csproj.ResolveComReference.cache
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Controlls.bnsPanel.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Controlls.bnsTextBox.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Controlls.bnsTextBoxEmail.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Controlls.bnsTextBoxKeypad.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Controlls.bnsTextBoxLookUp.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Controlls.bnsTextBoxTelephoneNumber.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_cash.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_Query.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_QueryView.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_sideTools.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_soundPlayer.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_topFilterTools.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_topTools.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.CTRL.uc_touchNumber.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgBrows.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgCash.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgDataEntry.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgInput.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgMasterFile.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgMultiCode.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgQuery.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgSoundPlayer.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgTouchNumber.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.dlgUserFunction.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Dialogs.SigninDlg.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Forms.frmEntry.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.Properties.Resources.resources
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.csproj.GenerateResource.Cache
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\libmp3lame.32.dll
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\libmp3lame.64.dll
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\bannoiFramework.dll.config
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\bannoiFramework.dll
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\bannoiFramework.pdb
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\Microsoft.Data.ConnectionUI.dll
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\office.dll
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\CoreAudioApi.pdb
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\WindowsMicrophoneMuteLibrary.pdb
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\SAS\bannoiFramework\bannoiFramework\bin\Debug\office.xml
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.dll
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.pdb
+D:\SAS\bannoiFramework\bannoiFramework\obj\Debug\bannoiFramework.csprojResolveAssemblyReference.cache

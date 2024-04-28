@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BNSDATA_EHRModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BNSDATA_EHRModelStoreContainer">
+    <EntitySet Name="EMPLOYEE" EntityType="BNSDATA_EHRModel.Store.EMPLOYEE" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="EMPLOYEE">
+    <Key>
+      <PropertyRef Name="EMPCODE" />
+    </Key>
+    <Property Name="EMPSEQ" Type="int" />
+    <Property Name="EMPCODE" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="EMPTNAME" Type="varchar" MaxLength="50" />
+    <Property Name="EMPFNAME" Type="varchar" MaxLength="50" />
+    <Property Name="EMPLNAME" Type="varchar" MaxLength="50" />
+    <Property Name="EMPSEX" Type="char" MaxLength="1" />
+    <Property Name="DEPTCOD" Type="char" MaxLength="4" />
+    <Property Name="EMPPOSI" Type="varchar" MaxLength="20" />
+    <Property Name="EMPLEV" Type="char" MaxLength="1" />
+    <Property Name="EMPTYP" Type="char" MaxLength="1" />
+    <Property Name="EMPID" Type="char" MaxLength="13" />
+    <Property Name="EMPSTRT" Type="datetime" />
+    <Property Name="EMPBRTH" Type="datetime" />
+    <Property Name="EMPAGE" Type="int" />
+    <Property Name="EMPSTT" Type="char" MaxLength="1" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BNSDATA_EHRModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BNSDATA_EHREntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="SIN_USER" EntityType="BNSDATA_EHRModel.SIN_USER" />
+    <EntitySet Name="SIN_USERGANT" EntityType="BNSDATA_EHRModel.SIN_USERGANT" />
+    <EntitySet Name="SIN_USERGROUP" EntityType="BNSDATA_EHRModel.SIN_USERGROUP" />
+    <EntitySet Name="EMPLOYEE" EntityType="BNSDATA_EHRModel.EMPLOYEE" />
+    <EntitySet Name="EMPLOYEE_POSI" EntityType="BNSDATA_EHRModel.EMPLOYEE_POSI" />
+    <EntitySet Name="VIEW_EHRSIGNIN" EntityType="BNSDATA_EHRModel.VIEW_EHRSIGNIN" />
+  </EntityContainer>
+  <EntityType Name="SIN_USER">
+    <Key>
+      <PropertyRef Name="REC_ID" />
+    </Key>
+    <Property Type="Decimal" Name="REC_ID" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="USERNAME" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="USERPW" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EMPCODE" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="STT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="UPDATE_BY" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATE_DATE" Precision="3" />
+    <Property Type="String" Name="CREATE_BY" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATE_DATE" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="SIN_USERGANT">
+    <Key>
+      <PropertyRef Name="REC_ID" />
+    </Key>
+    <Property Type="Decimal" Name="REC_ID" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="GROUPCODE" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="SIGNID" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="LEVELCODE" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="SYSTEMCODE" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="SYSTEMVERSION" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ISADMIN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="STT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="UPDATE_BY" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATE_DATE" Precision="3" />
+    <Property Type="String" Name="CREATE_BY" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATE_DATE" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="SIN_USERGROUP">
+    <Key>
+      <PropertyRef Name="GROUPCODE" />
+    </Key>
+    <Property Type="String" Name="GROUPCODE" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="GROUPNAME" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="STT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="UPDATE_BY" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATE_DATE" Precision="3" />
+    <Property Type="String" Name="CREATE_BY" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CREATE_DATE" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="EMPLOYEE">
+    <Key>
+      <PropertyRef Name="EMPCODE" />
+    </Key>
+    <Property Type="Int32" Name="EMPSEQ" />
+    <Property Type="String" Name="EMPCODE" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EMPTNAME" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EMPFNAME" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EMPLNAME" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EMPSEX" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DEPTCOD" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="EMPPOSI" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EMPLEV" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="EMPTYP" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="EMPID" MaxLength="13" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="EMPSTRT" Precision="3" />
+    <Property Type="DateTime" Name="EMPBRTH" Precision="3" />
+    <Property Type="Int32" Name="EMPAGE" />
+    <Property Type="String" Name="EMPSTT" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EMPLOYEE_POSI">
+    <Key>
+      <PropertyRef Name="POSCODE" />
+    </Key>
+    <Property Type="String" Name="POSCODE" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="POSNAME" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="UPDATE_DATE" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="VIEW_EHRSIGNIN">
+    <Key>
+      <PropertyRef Name="USERNAME" />
+      <PropertyRef Name="USERPW" />
+      <PropertyRef Name="SIGNID" />
+      <PropertyRef Name="LEVELCODE" />
+      <PropertyRef Name="ISADMIN" />
+      <PropertyRef Name="STT" />
+      <PropertyRef Name="GSTT" />
+    </Key>
+    <Property Type="String" Name="USERNAME" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="USERPW" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="SIGNID" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="EMPCODE" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FULLNAME" MaxLength="152" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LEVELCODE" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="SYSTEMCODE" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="SYSTEMVERSION" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ISADMIN" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="STT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="GSTT" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BNSDATA_EHRModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BNSDATA_EHREntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="EMPLOYEE" EntityType="BNSDATA_EHRModel.EMPLOYEE" />
+  </EntityContainer>
+  <EntityType Name="EMPLOYEE">
+    <Key>
+      <PropertyRef Name="EMPCODE" />
+    </Key>
+    <Property Name="EMPSEQ" Type="Int32" />
+    <Property Name="EMPCODE" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="EMPTNAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="EMPFNAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="EMPLNAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="EMPSEX" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="DEPTCOD" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+    <Property Name="EMPPOSI" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="EMPLEV" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="EMPTYP" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="EMPID" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+    <Property Name="EMPSTRT" Type="DateTime" Precision="3" />
+    <Property Name="EMPBRTH" Type="DateTime" Precision="3" />
+    <Property Name="EMPAGE" Type="Int32" />
+    <Property Name="EMPSTT" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BNSDATA_EHRModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="BNSDATA_EHRModelStoreContainer">
+          <EntitySet Name="EMPLOYEE" EntityType="BNSDATA_EHRModel.Store.EMPLOYEE" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="EMPLOYEE">
+          <Key>
+            <PropertyRef Name="EMPCODE" />
+          </Key>
+          <Property Name="EMPSEQ" Type="int" />
+          <Property Name="EMPCODE" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="EMPTNAME" Type="varchar" MaxLength="50" />
+          <Property Name="EMPFNAME" Type="varchar" MaxLength="50" />
+          <Property Name="EMPLNAME" Type="varchar" MaxLength="50" />
+          <Property Name="EMPSEX" Type="char" MaxLength="1" />
+          <Property Name="DEPTCOD" Type="char" MaxLength="4" />
+          <Property Name="EMPPOSI" Type="varchar" MaxLength="20" />
+          <Property Name="EMPLEV" Type="char" MaxLength="1" />
+          <Property Name="EMPTYP" Type="char" MaxLength="1" />
+          <Property Name="EMPID" Type="char" MaxLength="13" />
+          <Property Name="EMPSTRT" Type="datetime" />
+          <Property Name="EMPBRTH" Type="datetime" />
+          <Property Name="EMPAGE" Type="int" />
+          <Property Name="EMPSTT" Type="char" MaxLength="1" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BNSDATA_EHRModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BNSDATA_EHREntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="EMPLOYEE" EntityType="BNSDATA_EHRModel.EMPLOYEE" />
+        </EntityContainer>
+        <EntityType Name="EMPLOYEE">
+          <Key>
+            <PropertyRef Name="EMPCODE" />
+          </Key>
+          <Property Name="EMPSEQ" Type="Int32" />
+          <Property Name="EMPCODE" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="EMPTNAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EMPFNAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EMPLNAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EMPSEX" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="DEPTCOD" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+          <Property Name="EMPPOSI" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="EMPLEV" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="EMPTYP" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="EMPID" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="EMPSTRT" Type="DateTime" Precision="3" />
+          <Property Name="EMPBRTH" Type="DateTime" Precision="3" />
+          <Property Name="EMPAGE" Type="Int32" />
+          <Property Name="EMPSTT" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BNSDATA_EHRModelStoreContainer" CdmEntityContainer="BNSDATA_EHREntities">
+          <EntitySetMapping Name="EMPLOYEE">
+            <EntityTypeMapping TypeName="BNSDATA_EHRModel.EMPLOYEE">
+              <MappingFragment StoreEntitySet="EMPLOYEE">
+                <ScalarProperty Name="EMPSEQ" ColumnName="EMPSEQ" />
+                <ScalarProperty Name="EMPCODE" ColumnName="EMPCODE" />
+                <ScalarProperty Name="EMPTNAME" ColumnName="EMPTNAME" />
+                <ScalarProperty Name="EMPFNAME" ColumnName="EMPFNAME" />
+                <ScalarProperty Name="EMPLNAME" ColumnName="EMPLNAME" />
+                <ScalarProperty Name="EMPSEX" ColumnName="EMPSEX" />
+                <ScalarProperty Name="DEPTCOD" ColumnName="DEPTCOD" />
+                <ScalarProperty Name="EMPPOSI" ColumnName="EMPPOSI" />
+                <ScalarProperty Name="EMPLEV" ColumnName="EMPLEV" />
+                <ScalarProperty Name="EMPTYP" ColumnName="EMPTYP" />
+                <ScalarProperty Name="EMPID" ColumnName="EMPID" />
+                <ScalarProperty Name="EMPSTRT" ColumnName="EMPSTRT" />
+                <ScalarProperty Name="EMPBRTH" ColumnName="EMPBRTH" />
+                <ScalarProperty Name="EMPAGE" ColumnName="EMPAGE" />
+                <ScalarProperty Name="EMPSTT" ColumnName="EMPSTT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
